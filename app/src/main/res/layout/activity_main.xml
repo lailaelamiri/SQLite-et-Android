@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F0E8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="40dp"
+        android:paddingBottom="40dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="IVORY LEDGER"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#3B2F2F"
+            android:letterSpacing="0.2"
+            android:gravity="center"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Scholar Registry"
+            android:textSize="13sp"
+            android:textColor="#9E8B7D"
+            android:gravity="center"
+            android:paddingBottom="32dp" />
+
+        <View
+            android:layout_width="60dp"
+            android:layout_height="2dp"
+            android:background="#C4A882"
+            android:layout_gravity="center"
+            android:layout_marginBottom="32dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FAMILY NAME"
+            android:textSize="11sp"
+            android:textColor="#9E8B7D"
+            android:letterSpacing="0.15"
+            android:paddingBottom="6dp" />
+
+        <EditText
+            android:id="@+id/inputFamilyName"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="#FFFDF8"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textColor="#3B2F2F"
+            android:textColorHint="#C4B5A5"
+            android:hint="Enter family name"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GIVEN NAME"
+            android:textSize="11sp"
+            android:textColor="#9E8B7D"
+            android:letterSpacing="0.15"
+            android:paddingBottom="6dp" />
+
+        <EditText
+            android:id="@+id/inputGivenName"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="#FFFDF8"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textColor="#3B2F2F"
+            android:textColorHint="#C4B5A5"
+            android:hint="Enter given name"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="24dp" />
+
+        <Button
+            android:id="@+id/btnEnroll"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="#C4A882"
+            android:text="ENROLL SCHOLAR"
+            android:textColor="#FFFDF8"
+            android:textStyle="bold"
+            android:letterSpacing="0.1"
+            android:layout_marginBottom="40dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E8DDD0"
+            android:layout_marginBottom="32dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SCHOLAR ID"
+            android:textSize="11sp"
+            android:textColor="#9E8B7D"
+            android:letterSpacing="0.15"
+            android:paddingBottom="6dp" />
+
+        <EditText
+            android:id="@+id/inputScholarId"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="#FFFDF8"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textColor="#3B2F2F"
+            android:textColorHint="#C4B5A5"
+            android:hint="Enter scholar ID"
+            android:inputType="numberSigned"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/displayScholarResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F0E9DE"
+            android:padding="16dp"
+            android:textColor="#3B2F2F"
+            android:textSize="15sp"
+            android:minHeight="52dp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnLocate"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:background="#E8DDD0"
+                android:text="SEARCH"
+                android:textColor="#3B2F2F"
+                android:textStyle="bold"
+                android:letterSpacing="0.1"
+                android:layout_marginRight="8dp" />
+
+            <Button
+                android:id="@+id/btnErase"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:background="#3B2F2F"
+                android:text="REMOVE"
+                android:textColor="#FFFDF8"
+                android:textStyle="bold"
+                android:letterSpacing="0.1"
+                android:layout_marginLeft="8dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
